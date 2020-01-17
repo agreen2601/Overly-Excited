@@ -12,9 +12,17 @@ function addExcitement(theWordArray) {
     let buildMeUp = ""
 
     for (let i = 0; i < theWordArray.length; i++) {
-        buildMeUp = buildMeUp + " " + sentence[i]
+        buildMeUp += " " + sentence[i]
+        if (i % 3 === 2) {
+            buildMeUp += "!"
+        }
         console.log(buildMeUp);
     }
 }
 
-addExcitement(sentence)
+addExcitement(sentence);
+
+/*
+adds one more word to the sentence above each time, adding a "!" after 
+every 3rd word 
+*/
