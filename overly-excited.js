@@ -7,22 +7,26 @@ let sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the
     and output the words to the browser console.
 */
 
-function addExcitement(theWordArray) {
+function addExcitement(theWordArray, character) {
 
     let buildMeUp = ""
 
     for (let i = 0; i < theWordArray.length; i++) {
         buildMeUp += " " + sentence[i]
         if (i % 3 === 2) {
-            buildMeUp += "!"
+            buildMeUp += character
         }
         console.log(buildMeUp);
     }
 }
 
-addExcitement(sentence);
+addExcitement(sentence, "?");
 
 /*
 adds one more word to the sentence above each time, adding a "!" after 
 every 3rd word 
+*/
+
+/*
+added var "character" so that any character can be added to the end of every 3rd word
 */
