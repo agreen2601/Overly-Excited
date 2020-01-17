@@ -7,14 +7,14 @@ let sentence = ["The", "walrus", "danced", "through", "the", "trees", "in", "the
     and output the words to the browser console.
 */
 
-function addExcitement(theWordArray, character, num) {
+addExcitement = (theWordArray, character, num) => {
 
     let buildMeUp = ""
 
     for (let i = 0; i < theWordArray.length; i++) {
-        buildMeUp += " " + sentence[i]
+        buildMeUp += " " + sentence[i];
         if (i % 3 === 2) {
-            buildMeUp += character.repeat(num)
+            buildMeUp += character.repeat(num);
         }
         console.log(buildMeUp);
     }
@@ -33,4 +33,8 @@ added var "character" so that any character can be added to the end of every 3rd
 
 /*
 added a quanitity argument and used ".repeat(#)" to repeat the character # times
+*/
+
+/*
+changed to arrow notation
 */
